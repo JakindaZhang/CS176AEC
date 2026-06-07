@@ -178,7 +178,12 @@ int main(int argc, char *argv[])
          printf(">>>Incorrect Guesses: ");
 
          for (int i = 0; i < num_incorrect; i++)
+         {
             printf("%c", incorrect[i]);
+
+            if (i != num_incorrect - 1)
+               printf(" ");
+         }
 
          printf("\n>>>\n");
 
