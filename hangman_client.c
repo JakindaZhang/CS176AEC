@@ -166,11 +166,16 @@ int main(int argc, char *argv[])
          printf(">>>");
 
          for (int i = 0; i < word_length; i++)
-            printf("%c ", word[i]);
+         {
+            printf("%c", word[i]);
+
+            if (i != word_length - 1)
+               printf(" ");
+         }
 
          printf("\n");
 
-         printf(">>>Incorrect Guesses:");
+         printf(">>>Incorrect Guesses: ");
 
          for (int i = 0; i < num_incorrect; i++)
             printf(" %c", incorrect[i]);
